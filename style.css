@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* max-width: 700px; */
+}
+
+body {
+    font-family: "Roboto Mono", serif; 
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.header .nav-bar ul {
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.header .nav-bar ul a {
+    text-decoration: none;
+    font-size: 10pt;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header .nav-bar ul a:hover {
+    font-size: 11pt;
+}
+
+.header .nav-bar ul a:visited {
+    color: black;
+}
+
+.input-data , .output-data {
+    margin: 1rem;
+}
+
+.red {
+    color: red;
+}
+
+.input-data label {
+    text-transform: uppercase;
+}
+
+.input-data fieldset legend, .output-data h2 {
+    font-size: 14pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+.input-data .form, .text{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.input-data input[type="text"],input[type="number"] {
+    padding: 0.3rem;
+    border-radius: 4px;
+    border: inset 1px black;
+}
+
+.input-data input[type="submit"] {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    border: inset 1px black;
+    font-weight: 700;
+    box-shadow: 1px 1px 0px 1px black ;
+}
+
+.input-data input[type="submit"]:hover {
+    box-shadow: none ;
+}
+
+.input-data input[type="number"]:active {
+    box-shadow: none;
+    border: none;
+}
+
+.input-data input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-data input[type="number"] {
+    -moz-appearance: textfield;
+}
